@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Socket.io -->
+    <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+      }
+      .customLi {
+        border-radius: 5px;
+        padding: 3px 6px;
+        background-color: rgb(111, 215, 247);
+        margin: 4px 0px;
+        width: max-content;
+      }
+    </style>
+    <title>Socket.io Client</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h1>Chat Studio</h1>
+    </div>
+    <section class="container mt-5" id="main-section">
+      <div>
+        <ul id="messages-ul"></ul>
+      </div>
+      <div id="input-div">
+        <form>
+          <input
+            id="message"
+            type="text"
+            class="form-control"
+            name="message"
+            placeholder="message"
+          />
+          <input
+            type="submit"
+            class="btn btn-primary mt-2"
+            id="sendBtn"
+            value="send"
+          />
+        </form>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
